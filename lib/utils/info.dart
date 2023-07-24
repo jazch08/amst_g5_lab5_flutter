@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:amstg5_flutter/models/product.dart';
 
 List<Product> promos = [
-  Product("assets/images/shoes2.png", "Adidas CF Lite", "Shoes Gray color", 115,
-      12, 1, const Color(0XFFE3E2DC)),
-  Product("assets/images/shoes1.png", "Nike Air", "White-red Daily Shoes", 84,
-      12, 2, const Color(0XFFE8E6CE)),
-  Product("assets/images/shoes4.png", "Nike React Miler",
-      "Blue-Orange Running shoes", 95, 12, 3, const Color(0XFFD1E8CE)),
-  Product("assets/images/shoes1.png", "Adidas Kaptir Shoes", "Shoes gray color",
-      105, 12, 4, const Color(0XFFF9DFB5)),
+  Product("assets/images/bebedero.jpg", "Fuente automática", "Fuente automatica para 2L de agua", 50,
+      12, 1, const Color(0xFFD6F6F3)),
+  Product("assets/images/comedero.jpg", "Platos cerámicos", "Plato para comida y agua", 30,
+      12, 2, const Color(0xFF79B3B5)),
+  Product("assets/images/almohadillas.jpg", "Almohadillas",
+      "Almohadillas desechables", 10, 12, 3, const Color(0xFF7DBEF3)),
+  Product("assets/images/cepillo.jpg", "Cepillo automático", "Cepillo automático para eliminar cabello",
+      25, 12, 4, const Color(0xFF86F0D7)),
 ];

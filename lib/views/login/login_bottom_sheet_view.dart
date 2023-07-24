@@ -22,12 +22,12 @@ class _LoginBottomSheet extends State<LoginBottomSheet> {
 
   _content(context) {
     return Container(
-      margin: EdgeInsets.only(top: 32, left: 16, right: 16, bottom: 60),
+      margin: const EdgeInsets.only(top: 32, left: 16, right: 16, bottom: 60),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          Text(
-            "Observador",
+          const Text(
+            "Iniciar Sesión",
             style: TextStyle(
               fontSize: 22,
               color: AppColors.primaryColor,
@@ -35,39 +35,39 @@ class _LoginBottomSheet extends State<LoginBottomSheet> {
             ),
             textAlign: TextAlign.center,
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           TextField(
             controller: _controllerUser,
             keyboardType: TextInputType.emailAddress,
             decoration: InputDecoration(
-                prefixIcon: Icon(Icons.person_rounded),
-                contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+                prefixIcon: const Icon(Icons.person_rounded),
+                contentPadding: const EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
                 hintText: "Ingrese su Email",
                 labelText: "Email",
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(32.0))),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           _passwordInput,
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Container(
             width: double.infinity,
-            margin: EdgeInsets.only(left: 8, right: 8),
+            margin: const EdgeInsets.only(left: 8, right: 8),
             child: ElevatedButton(
               onPressed: () => Navigator.of(context).pushReplacementNamed("/home"),
               style: ElevatedButton.styleFrom(
-                  padding: EdgeInsets.only(top: 16, bottom: 16),
-                  textStyle: TextStyle(fontSize: 16, color: Colors.white),
-                  primary: AppColors.primaryColor,
+                  padding: const EdgeInsets.only(top: 16, bottom: 16), 
+                  backgroundColor: AppColors.primaryColor,
+                  textStyle: const TextStyle(fontSize: 16, color: Colors.white),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30))),
-              child: Text("Ingresar",style: TextStyle(color: AppColors.text_dark),),
+              child: const Text("Ingresar",style: TextStyle(color: AppColors.text_dark),),
             ),
           ),
         ],
@@ -122,7 +122,7 @@ class _PasswordInput extends State<PasswordInput> {
             icon: Icon(_currentVisibility),
             onPressed: _onTapVisibility,
           ),
-          contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+          contentPadding: const EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
           hintText: widget.hint,
           labelText: widget.label,
           border:

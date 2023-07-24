@@ -57,7 +57,7 @@ class _ForYouView extends State<ForYouView> {
         _promo(),
         const Padding(
           padding: EdgeInsets.all(10),
-          child: Text("Shirts",
+          child: Text("Products",
               style: TextStyle(
                   color: AppColors.text_light,
                   fontSize: 30,
@@ -66,7 +66,7 @@ class _ForYouView extends State<ForYouView> {
         _shirts(),
         const Padding(
           padding: EdgeInsets.all(10),
-          child: Text("Pants",
+          child: Text("Toys",
               style: TextStyle(
                   color: AppColors.text_light,
                   fontSize: 30,
@@ -90,9 +90,9 @@ class _ForYouView extends State<ForYouView> {
         autoPlayInterval: const Duration(seconds: 8),
       ),
       items: [
-        _carouselImage("assets/images/carousel1.jpg"),
-        _carouselImage("assets/images/carousel2.jpg"),
-        _carouselImage("assets/images/carousel3.jpg"),
+        _carouselImage("assets/images/carousel4.jpg"),
+        _carouselImage("assets/images/carousel5.jpg"),
+        _carouselImage("assets/images/carousel6.jpg"),
       ],
     );
   }
